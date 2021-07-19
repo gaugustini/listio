@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Listio</string>
+
+    <string name="tasks">Tasks</string>
+
+    <string name="new_task">New Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="empty_tasks">Ops! You do not have\nany task</string>
+
+    <string name="options">Options</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <string name="title">Title</string>
+    <string name="date">Date</string>
+    <string name="hour">Hour</string>
+    <string name="description">Description</string>
+
 </resources>
