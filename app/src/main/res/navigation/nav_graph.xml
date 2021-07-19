@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.gaugustini.listio.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_entry"
+            app:destination="@id/entry" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/entry"
+        android:name="com.gaugustini.listio.ui.entry.TaskEntryFragment"
+        android:label="TaskEntryFragment"
+        tools:layout="@layout/fragment_task_entry">
+        <argument
+            android:name="taskId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_entry_to_home"
+            app:destination="@id/home"
+            app:popUpTo="@id/home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

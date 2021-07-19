@@ -4,6 +4,7 @@
     package="com.gaugustini.listio">
 
     <application
+        android:name="com.gaugustini.listio.ListioApp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Listio"
         tools:ignore="AllowBackup">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
