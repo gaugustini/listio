@@ -14,8 +14,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.gaugustini.listio.R
-import com.gaugustini.listio.database.Task
 import com.gaugustini.listio.databinding.FragmentHomeBinding
+import com.gaugustini.listio.model.Task
+import com.gaugustini.listio.ui.adapter.TaskAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

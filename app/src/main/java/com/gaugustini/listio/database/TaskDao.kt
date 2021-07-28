@@ -1,6 +1,7 @@
 package com.gaugustini.listio.database
 
 import androidx.room.*
+import com.gaugustini.listio.model.Task
 import kotlinx.coroutines.flow.Flow
 
 /**
@@ -9,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface TaskDao {
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(task: Task)
 
     @Update

@@ -1,13 +1,12 @@
-package com.gaugustini.listio.ui.home
+package com.gaugustini.listio.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.gaugustini.listio.database.Task
 import com.gaugustini.listio.databinding.ListItemTaskBinding
-import com.gaugustini.listio.util.DiffCallback
+import com.gaugustini.listio.model.Task
 
 class TaskAdapter(
     private val onClick: (Task) -> Unit,

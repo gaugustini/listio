@@ -1,10 +1,10 @@
-package com.gaugustini.listio.database
+package com.gaugustini.listio.repository
 
+import com.gaugustini.listio.database.TaskDao
+import com.gaugustini.listio.model.Task
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
 class TaskRepository @Inject constructor(private val taskDao: TaskDao) {
 
     suspend fun insert(task: Task) = taskDao.insert(task)

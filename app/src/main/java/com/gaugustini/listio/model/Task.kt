@@ -1,4 +1,4 @@
-package com.gaugustini.listio.database
+package com.gaugustini.listio.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
